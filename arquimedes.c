@@ -3,6 +3,7 @@
 #include <time.h>
 
 int main()
+
 { srand(time(NULL));
     int pontuacao = 0, primeiro = 0, segundo = 0, i, resultado, vidas = 3, opcao = 0, operacao, arquimedes, qtd_numeros, rodadas = 0;
 
@@ -31,6 +32,7 @@ int main()
 
             // Verifica se o usuario digitara uma opcao valida
             do
+
             {
                 printf("\nPONTUACAO ATUAL: %d\n", pontuacao);
                 // Imprime o numero do Arquimedes e do Jogador
