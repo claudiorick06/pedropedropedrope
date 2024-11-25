@@ -12,14 +12,7 @@ int main()
     printf("\n==========================\n");
 
     // Verifica se o usuario digitara uma opcao valida
-    while (opcao < 1 || opcao > 2)
-    {
-        printf("Selecione uma opcao:\n");
-        printf("\n1) JOGAR");
-        printf("\n2) REGRAS\n");
-        printf("\n--> ");
-        scanf(" %d", &opcao);
-    }
+
 
     if (opcao == 1)
     {
