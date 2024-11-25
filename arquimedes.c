@@ -3,8 +3,7 @@
 #include <time.h>
 
 int main()
-{
-    srand(time(NULL));
+{ srand(time(NULL));
     int pontuacao = 0, primeiro = 0, segundo = 0, i, resultado, vidas = 3, opcao = 0, operacao, arquimedes, qtd_numeros, rodadas = 0;
 
     printf("\n==========================\n");
@@ -12,7 +11,14 @@ int main()
     printf("\n==========================\n");
 
     // Verifica se o usuario digitara uma opcao valida
-
+    while (opcao < 1 || opcao > 2)
+    {
+        printf("Selecione uma opcao:\n");
+        printf("\n1) JOGAR");
+        printf("\n2) REGRAS\n");
+        printf("\n--> ");
+        scanf(" %d", &opcao);
+    }
 
     if (opcao == 1)
     {
