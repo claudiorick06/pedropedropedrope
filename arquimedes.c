@@ -4,34 +4,7 @@
 
 int main()
 {
-    srand(time(NULL));
-    int pontuacao = 0, primeiro = 0, segundo = 0, i, resultado, vidas = 3, opcao = 0, operacao, arquimedes, qtd_numeros, rodadas = 0;
-
-    printf("\n==========================\n");
-    printf("\nBEM-VINDO A ARQUIMEDES!!\n");
-    printf("\n==========================\n");
-
-    // Verifica se o usuario digitara uma opcao valida
-    while (opcao < 1 || opcao > 2)
-    {
-        printf("Selecione uma opcao:\n");
-        printf("\n1) JOGAR");
-        printf("\n2) REGRAS\n");
-        printf("\n--> ");
-        scanf(" %d", &opcao);
-    }
-
-    if (opcao == 1)
-    {
-        // Inicia o jogo
-        while (vidas > 0 && pontuacao < 10)
-        {
-            arquimedes = rand() % 25 + 1;
-            int numeros_jogador[5] = {rand() % 10 + 1, rand() % 10 + 1, rand() % 15 + 1, rand() % 15 + 1, rand() % 20 + 1};
-            qtd_numeros = sizeof(numeros_jogador) / sizeof(numeros_jogador[0]);
-
-            // Verifica se o usuario digitara uma opcao valida
-            do
+    dale
             {
                 printf("\nPONTUACAO ATUAL: %d\n", pontuacao);
                 // Imprime o numero do Arquimedes e do Jogador
